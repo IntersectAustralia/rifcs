@@ -38,15 +38,15 @@
 /* 52 */       RegistryObject ro = (RegistryObject)i.next();
 /* 53 */       Collection c = (Collection)ro.getClassObject();
 /* 54 */       j = c.getNames().iterator();
-/* 55 */       continue;
+///* 55 */       continue;
 /*    */ 
-/* 57 */       Name n = (Name)j.next();
-/* 58 */       if (n.getType().equals("primary"))
-/*    */       {
-/* 60 */         Iterator k = n.getNameParts().iterator();
-/* 61 */         while (k.hasNext())
-/* 62 */           System.out.println(((NamePart)k.next()).getValue() + " (" + ro.getKey() + ")");
-/*    */       }
+///* 57 */       Name n = (Name)j.next();
+///* 58 */       if (n.getType().equals("primary"))
+///*    */       {
+///* 60 */         Iterator k = n.getNameParts().iterator();
+///* 61 */         while (k.hasNext())
+///* 62 */           System.out.println(((NamePart)k.next()).getValue() + " (" + ro.getKey() + ")");
+///*    */       }
 /*    */     }
 /*    */   }
 /*    */ }
